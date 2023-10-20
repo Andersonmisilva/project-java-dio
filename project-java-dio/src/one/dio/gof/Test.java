@@ -9,6 +9,7 @@ import one.dio.gof.strategy.ComportamentoAgressivo;
 import one.dio.gof.strategy.ComportamentoDefensivo;
 import one.dio.gof.strategy.ComportamentoNormal;
 import one.dio.gof.strategy.Robo;
+import java.util.Scanner;
 
 public class Test {
 
@@ -50,8 +51,21 @@ public class Test {
 
         // Facade
 
+        Scanner scanner = new Scanner(System.in);
+
         Facade facade = new Facade();
-        facade.migrarCliente("Venilton", "14801788");
+
+
+         System.out.println("Digite o seu Nome.: ");
+         String nomeScanner = scanner.nextLine();
+
+
+        System.out.println("Digite o seu CEP.: ");
+        String cepScanner = scanner.nextLine();
+
+        facade.migrarCliente(nomeScanner, cepScanner);
+
+        scanner.close();
     }
 
 }
