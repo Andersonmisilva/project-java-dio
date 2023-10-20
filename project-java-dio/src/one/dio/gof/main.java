@@ -11,7 +11,7 @@ import one.dio.gof.strategy.ComportamentoNormal;
 import one.dio.gof.strategy.Robo;
 import java.util.Scanner;
 
-public class Test {
+public class main {
 
     public static void main(String[] args) {
 
